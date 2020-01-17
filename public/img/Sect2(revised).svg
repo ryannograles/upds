@@ -1,0 +1,46 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="1366" height="455" viewBox="0 0 1366 455">
+  <defs>
+    <clipPath id="clip-Web_1366_2">
+      <rect width="1366" height="455"/>
+    </clipPath>
+  </defs>
+  <g id="Web_1366_2" data-name="Web 1366 – 2" clip-path="url(#clip-Web_1366_2)">
+    <rect width="1366" height="455" fill="#fff"/>
+    <g id="Rectangle_1" data-name="Rectangle 1" fill="#fff" stroke="#707070" stroke-width="1">
+      <rect width="1367" height="223" stroke="none"/>
+      <rect x="0.5" y="0.5" width="1366" height="222" fill="none"/>
+    </g>
+    <g id="Path_2" data-name="Path 2" transform="translate(-1)" fill="#6f459e">
+      <path d="M0,0H1367V227.5H0Z" stroke="none"/>
+      <path d="M 1 1 L 1 226.5 L 1366 226.5 L 1366 1 L 1 1 M 0 0 L 1367 0 L 1367 227.5 L 0 227.5 L 0 0 Z" stroke="none" fill="rgba(112,112,112,0)"/>
+    </g>
+    <g id="Rectangle_3" data-name="Rectangle 3" transform="translate(-1 227)" fill="#b4c540" stroke="rgba(112,112,112,0)" stroke-width="1">
+      <rect width="1366" height="228" stroke="none"/>
+      <rect x="0.5" y="0.5" width="1365" height="227" fill="none"/>
+    </g>
+    <g id="Ellipse_6" data-name="Ellipse 6" transform="translate(813 -347.883)" fill="#fff" stroke="#707070" stroke-width="1" opacity="0.08">
+      <circle cx="250" cy="250" r="250" stroke="none"/>
+      <circle cx="250" cy="250" r="249.5" fill="none"/>
+    </g>
+    <g id="Ellipse_7" data-name="Ellipse 7" transform="translate(0 16.117)" fill="#fff" stroke="rgba(112,112,112,0)" stroke-width="1">
+      <ellipse cx="683" cy="212" rx="683" ry="212" stroke="none"/>
+      <ellipse cx="683" cy="212" rx="682.5" ry="211.5" fill="none"/>
+    </g>
+    <g id="Ellipse_8" data-name="Ellipse 8" transform="translate(-101 280.117)" fill="#fff" stroke="rgba(112,112,112,0)" stroke-width="1" opacity="0.14">
+      <circle cx="250" cy="250" r="250" stroke="none"/>
+      <circle cx="250" cy="250" r="249.5" fill="none"/>
+    </g>
+    <g id="Rectangle_4" data-name="Rectangle 4" transform="translate(-1 17)" fill="#fff" stroke="rgba(112,112,112,0)" stroke-width="1">
+      <rect width="667" height="212" stroke="none"/>
+      <rect x="0.5" y="0.5" width="666" height="211" fill="none"/>
+    </g>
+    <g id="Rectangle_5" data-name="Rectangle 5" transform="translate(700 223)" fill="#fff" stroke="rgba(112,112,112,0)" stroke-width="1">
+      <rect width="667" height="217" stroke="none"/>
+      <rect x="0.5" y="0.5" width="666" height="216" fill="none"/>
+    </g>
+    <g id="Ellipse_9" data-name="Ellipse 9" transform="translate(-83 -165.883)" fill="#fff" stroke="rgba(112,112,112,0)" stroke-width="1" opacity="0.08">
+      <ellipse cx="275" cy="142" rx="275" ry="142" stroke="none"/>
+      <ellipse cx="275" cy="142" rx="274.5" ry="141.5" fill="none"/>
+    </g>
+  </g>
+</svg>

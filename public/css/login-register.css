@@ -1,0 +1,122 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+
+.welcome-container{
+    background: url("/img/Login.svg") no-repeat;
+    background-size: cover;
+    height:661px;
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+
+}
+
+.welcome-header {
+    margin-top: 5px;
+    text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.3);
+}
+
+.welcome-container h1{
+    font-size: 50px;
+}
+
+.welcome-container h5{
+    font-size: 15px;
+}
+
+.welcome-container img{
+    width: 400px;
+    margin-top: 100px;
+    margin-bottom: 40px;
+}
+
+.avatar{
+    width: 100%;
+    height: 100%;
+    margin-left: 5px;
+    margin-right: 5px;
+    margin-top: 50px;
+    left: 0;
+    bottom: 0;
+}
+
+.header-group{
+    align-content: flex-end;
+    align-items: center;
+    display: flex;
+}
+
+.title-container{
+    padding: 10px;
+    margin: 65px 10px 10px;
+}
+
+.title-container h4{
+    font-family: 'Poppins', sans-serif;
+    font-size: 40px;
+    text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.3);
+}
+
+.login-forms{
+    margin-right: 10px;
+    background-color: snow;
+    margin-left: 10px;
+    font-family: 'Poppins', sans-serif;
+}
+
+.login-forms button{
+
+    color: white;
+    font-family: 'Raleway', sans-serif;
+    font-weight: bold;
+    font-size: 15px;
+    letter-spacing: 4px;
+    text-transform: uppercase;
+    background: linear-gradient(120deg,#8DBD61, #99ca6d,#aedf7f);
+    border: 1px #8DBD61 solid;
+    transition: 0.9s;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.3);
+}
+
+.login-forms button:hover{
+    color: white;
+    border-radius: 5px;
+    border: 1px #8DBD61 solid;
+    background: linear-gradient(240deg,#8DBD61, #99ca6d,#aedf7f);
+}
+
+.register-now{
+    margin-top: 20px;
+}
+
+.register-now a{
+    color: white;
+    font-family: 'Raleway', sans-serif;
+    font-weight: bold;
+    font-size: 15px;
+    letter-spacing: 4px;
+    text-transform: uppercase;
+    background: linear-gradient(120deg,#3686C9, #3795d9, #33caf8);
+    border: 1px #8DBD61 solid;
+    transition: 0.9s;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.3);
+}
+
+.register-now a:hover{
+    color: white;
+    border-radius: 5px;
+    border: 1px #8DBD61 solid;
+    background: linear-gradient(240deg,#3686C9, #3795d9, #33caf8);
+}
+
+   .login-forms input{
+        margin-top: 20px;
+        margin-bottom: 20px;
+        border: none;
+        border-radius: 0;
+        background: rgba(221, 221, 221, 0.4);
+}
+
+

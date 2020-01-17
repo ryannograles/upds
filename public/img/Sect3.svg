@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="1366" height="401" viewBox="0 0 1366 401">
+  <defs>
+    <clipPath id="clip-Web_1366_3">
+      <rect width="1366" height="401"/>
+    </clipPath>
+  </defs>
+  <g id="Web_1366_3" data-name="Web 1366 – 3" clip-path="url(#clip-Web_1366_3)">
+    <rect width="1366" height="401" fill="#b4c540"/>
+    <g id="Ellipse_10" data-name="Ellipse 10" transform="translate(-98 -167.883)" fill="#fff" stroke="rgba(112,112,112,0)" stroke-width="1" opacity="0.14">
+      <circle cx="250" cy="250" r="250" stroke="none"/>
+      <circle cx="250" cy="250" r="249.5" fill="none"/>
+    </g>
+    <g id="Ellipse_11" data-name="Ellipse 11" transform="translate(558)" fill="#fff" stroke="rgba(112,112,112,0)" stroke-width="1" opacity="0.14">
+      <ellipse cx="421.5" cy="297.5" rx="421.5" ry="297.5" stroke="none"/>
+      <ellipse cx="421.5" cy="297.5" rx="421" ry="297" fill="none"/>
+    </g>
+  </g>
+</svg>
