@@ -22,13 +22,33 @@
                     </div>
                     <div class="col col-md-4 ">
                         <div class="list-container ">
+                            @guest
                             <ul class="navbar-nav ml-auto">
                                 <li class="nav-item ">
                                     <a href="{{route('login')}}" class="nav-link login">Login</a>
                                 </li>
+                                @if(Route::has('register'))
                                 <li class="nav-item">
                                     <a href="{{route('register')}}" class="nav-link register">Register</a>
                                 </li>
+                                    @endif
+                                @else
+                                    <a href="#" id="navbarDropdown" class="nav-item dropdown-toggle user-now" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" v-pre>
+                                            {{Auth::user()->first_name}} <span class="caret"></span>
+                                    </a>
+
+                                    <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
+                                        <a class="dropdown-item" href="{{ route('logout') }}"
+                                           onclick="event.preventDefault();
+                                                     document.getElementById('logout-form').submit();">
+                                            {{ __('Logout') }}
+                                        </a>
+                                        <a href="{{route('dashboard')}}" class="dropdown-item">Dashboard</a>
+                                        <form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">
+                                            @csrf
+                                        </form>
+                                    </div>
+                                    @endguest
                             </ul>
                         </div>
                     </div>

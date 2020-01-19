@@ -9,11 +9,6 @@
     background-color: #8BDB61;
 }
 
-.table-container{
-    margin-top: 10px;
-    margin-bottom: 10px;
-}
-
 .title-header h1{
     font-family: 'Poppins', sans-serif;
     font-weight: bolder;
@@ -25,29 +20,40 @@
     font-weight: bold;
 }
 
-.user-table{
-    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.3);
-    transition: 0.5s;
+.student-info-container{
+    margin: 10px 5px 5px;
+
 }
 
-.user-table:hover {
-    box-shadow: 4px 4px 15px rgba(0, 0, 0, 0.3);
+.edit-button{
+    margin: 10px;
 }
 
-.user-button{
-    color: dodgerblue;
+.edit-button button{
     font-family: 'Open Sans', sans-serif;
     font-weight: bold;
-    letter-spacing: 0.05rem;
-    padding: 0  ;
-    transition: 0.3s;
+    text-transform: uppercase;
+    letter-spacing: 3px;
 }
 
-.user-button:hover{
-    text-decoration: none;
-    color: darkgreen;
+.info-title{
+    margin: 5px;
+    padding-left: 2px;
 }
 
-.user-table tbody tr td{
+.info-title h3{
+    font-family: 'Open Sans', sans-serif;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 2px;
 
+}
+
+.user-table tbody tr td {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: bold;
+}
+
+.user-info{
+    box-shadow: 3px 3px 15px rgba(0, 0, 0, 0.3);
 }

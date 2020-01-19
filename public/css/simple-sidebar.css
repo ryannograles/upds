@@ -12,16 +12,21 @@ body {
 
 #sidebar-wrapper {
   min-height: 100vh;
-  margin-left: -20rem;
+  margin-left: -30rem;
   -webkit-transition: margin .25s ease-out;
   -moz-transition: margin .25s ease-out;
   -o-transition: margin .25s ease-out;
   transition: margin .25s ease-out;
 }
 
+.list-group{
+    margin-right: 1px;
+}
+
 .list-group .list-group-item{
     border: none;
     background: none;
+    margin: 5px;
     color: black;
     text-decoration: none;
     transition: 0.3s;
@@ -32,7 +37,7 @@ body {
 }
 
 #sidebar-wrapper .sidebar-heading  .navbar-brand img{
-    width: 25%;
+    width: 23%;
     margin-left: 5px;
 
 }
@@ -43,6 +48,10 @@ body {
     color: white;
     letter-spacing: 0.1rem;
     transition: 0.3s;
+}
+
+.navigation-bar{
+    padding-left: 20px;
 }
 
 .user-link:hover{
@@ -62,7 +71,7 @@ body {
 }
 
 #sidebar-wrapper .list-group {
-     width: 15rem;
+     width: 17rem;
  }
 
 #sidebar-wrapper .list-group .list-group-item{
@@ -80,11 +89,13 @@ body {
   margin-left: 0;
 }
 
+
+
 .navigation-bar{
     background-color: #575A6C;
 }
 
-@media (min-width: 350px) {
+@media (min-width: 300px) {
   #sidebar-wrapper {
     margin-left: 0;
   }

@@ -37,12 +37,12 @@
                     </div>
                     <img src="{{asset('img/XS_seal_update.png')}}" alt="Logo">
                     <div class="text-left navbar-text text-heading">
-                        <h3 style="font-size: 20px;">Xavier School<br>Updating System</h3>
+                        <h3 style="font-size: 16px; padding: 2px; margin-right: 5px">Xavier School<br>Updating System</h3>
                     </div>
                 </div>
         </div>
         <div class="list-group">
-            <a href="{{route('dashboard')}}" class="list-group-item list"><i class="fas fa-columns" style="margin-right: 10px"></i>Dashboard</a>
+            <a href="#" class="list-group-item list"><i class="fas fa-columns" style="margin-right: 10px"></i>Dashboard</a>
 {{--            <a href="#" class="list-group-item list-group-item-action bg-light">Shortcuts</a>--}}
 {{--            <a href="#" class="list-group-item list-group-item-action bg-light">Overview</a>--}}
 {{--            <a href="#" class="list-group-item list-group-item-action bg-light">Events</a>--}}
@@ -58,17 +58,23 @@
             <button class="btn btn-outline-light" id="menu-toggle"><i class="fas fa-align-left"></i></button>
 
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
+                <i class="fas fa-align-justify"></i>
             </button>
 
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav ml-auto mt-2 mt-lg-0">
                     <li class="nav-item dropdown">
                         <a class="nav-link dropdown-toggle user-link" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                            Welcome
+                            {{ Auth::user()->student_id}}
                         </a>
                         <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
-                            <a class="dropdown-item" href="#">Logout</a>
+                            <a class="dropdown-item" href="{{route('logout')}}"
+                               onclick="event.preventDefault();
+                                                     document.getElementById('logout-form').submit();">Logout</a>
+
+                            <form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">
+                                @csrf
+                            </form>
 
                         </div>
                     </li>
