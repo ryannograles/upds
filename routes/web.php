@@ -19,7 +19,6 @@ Auth::routes();
 
 Route::get('/dashboard', 'DashboardController@index')->name('dashboard');
 
-Route::get('/home', 'HomeController@index')->name('home');
 
 Auth::routes();
 
@@ -27,5 +26,3 @@ Route::post('/login/custom',[
     'uses' => 'StudentLoginController@login',
     'as' =>'login.custom'
 ]);
-
-Route::get('/home', 'HomeController@index')->name('home');
