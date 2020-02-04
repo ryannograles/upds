@@ -43,7 +43,7 @@
                 </div>
         </div>
         <div class="list-group">
-            <a href="#" class="list-group-item list"><i class="fas fa-columns icon-nav" style="margin-right: 10px"></i>Request</a>
+            <a href="#" class="list-group-item list"><i class="fas fa-columns icon-nav" style="margin-right: 10px"></i>Dashboard</a>
         </div>
     </div>
 
