@@ -4,9 +4,9 @@ namespace App;
 
 use Illuminate\Database\Eloquent\Model;
 
-class FatherData extends Model
+class Contacts extends Model
 {
-    protected $table = 'father_data';
+    protected $table = 'contacts';
 
     public function user(){
         return $this->belongsTo('App\User', 'student_id', 'student_id');

@@ -11,6 +11,7 @@
     <!-- Scripts -->
     <script src="{{ asset('js/app.js') }}" defer></script>
     <script src="{{asset('js/menutoggle.js')}}" defer></script>
+    <script src="{{asset('/js/jquery-modal.js')}}" defer></script>
 
     <!-- Fonts -->
     <link rel="dns-prefetch" href="//fonts.gstatic.com">
@@ -42,15 +43,9 @@
                 </div>
         </div>
         <div class="list-group">
-            <a href="#" class="list-group-item list"><i class="fas fa-columns" style="margin-right: 10px"></i>Dashboard</a>
-{{--            <a href="#" class="list-group-item list-group-item-action bg-light">Shortcuts</a>--}}
-{{--            <a href="#" class="list-group-item list-group-item-action bg-light">Overview</a>--}}
-{{--            <a href="#" class="list-group-item list-group-item-action bg-light">Events</a>--}}
-{{--            <a href="#" class="list-group-item list-group-item-action bg-light">Profile</a>--}}
-{{--            <a href="#" class="list-group-item list-group-item-action bg-light">Status</a>--}}
+            <a href="#" class="list-group-item list"><i class="fas fa-columns icon-nav" style="margin-right: 10px"></i>Request</a>
         </div>
     </div>
-    <!-- /#sidebar-wrapper -->
 
     <div id="page-content-wrapper">
 

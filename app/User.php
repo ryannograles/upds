@@ -37,16 +37,20 @@ class User extends Authenticatable
         'email_verified_at' => 'datetime',
     ];
 
-    public function StudentData(){
-        return $this->hasMany('App\StudentData');
+    public $timestamps = false;
+
+    protected $table = 'student_data';
+
+    public function studentData(){
+        return $this->hasMany('App\StudentPersonalData', 'student_id', 'student_id');
     }
 
-    public function FatherData(){
-        return $this->hasMany('App\FatherData');
+    public function fatherData(){
+        return $this->hasMany('App\FatherData', 'student_id', 'student_id');
     }
 
-    public function MotherData(){
-        return $this->hasMany('App\MotherData');
+    public function motherData(){
+        return $this->hasMany('App\MotherData', 'student_id', 'student_id');
     }
 
 

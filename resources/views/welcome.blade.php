@@ -33,8 +33,8 @@
                                 </li>
                                     @endif
                                 @else
-                                    <a href="#" id="navbarDropdown" class="nav-item dropdown-toggle user-now" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" v-pre>
-                                            {{Auth::user()->first_name}} <span class="caret"></span>
+                                    <a href="#" id="navbarDropdown" class="nav-item dropdown-toggle user-now" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" >
+                                            {{Auth::user()->student_id}} <span class="caret"></span>
                                     </a>
 
                                     <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">

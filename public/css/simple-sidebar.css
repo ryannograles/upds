@@ -7,7 +7,7 @@ body {
   overflow-x: hidden;
 }
 .sidebar{
-    background-color: #3686C9;
+    background-color: #324ab2;
 }
 
 #sidebar-wrapper {
@@ -20,6 +20,7 @@ body {
 }
 
 .list-group{
+    margin-top: 20px;
     margin-right: 1px;
 }
 
@@ -27,13 +28,13 @@ body {
     border: none;
     background: none;
     margin: 5px;
-    color: black;
     text-decoration: none;
+    color: snow;
     transition: 0.3s;
 }
 
 .list-group .list-group-item:hover{
-    color: snow;
+    color: #8BDB61;
 }
 
 #sidebar-wrapper .sidebar-heading  .navbar-brand img{
@@ -61,6 +62,7 @@ body {
 .text-heading{
     transform: translateY(12px);
     margin-left: 5px;
+    color: snow;
     font-family: 'Poppins', sans-serif;
     text-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
 }
@@ -73,6 +75,10 @@ body {
 #sidebar-wrapper .list-group {
      width: 17rem;
  }
+
+.icon-nav{
+    font-size: 20px;
+}
 
 #sidebar-wrapper .list-group .list-group-item{
     font-family: 'Open Sans',sans-serif;
