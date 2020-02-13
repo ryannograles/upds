@@ -23,13 +23,11 @@
                     </thead>
                     <tbody>
                     @foreach($forapprovals as $approval)
-                        <form action="{{ url('updateinfos', $approval->id)}}" method="POST">
+                        <form action="{{ url('/updateinfos/'. $approval->id)}}" method="POST">
                             @csrf
                             @method('PUT')
                             <tr>
-                                <td> {{ $approval->id }}
-                                    <input type="hidden" name="id" value="{{ $approval->id }}">
-                                </td>
+                                <td> {{ $approval->id }}</td>
                                 <td>{{ $approval->student_id }}
 
                                     <input type="hidden" name="student_id" value="{{ $approval->student_id }}">

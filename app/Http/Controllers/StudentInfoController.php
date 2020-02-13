@@ -622,7 +622,7 @@ if ($name == 'fhn'){
 }
 
 if ($name == 'f-street'){
-                    DB::table('for_approval')->insert(
+    DB::table('for_approval')->insert(
                         [
                             'student_id' => $user_id,
             'table_name' => "father_address",
