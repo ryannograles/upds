@@ -6,7 +6,9 @@ use Illuminate\Database\Eloquent\Model;
 
 class FatherData extends Model
 {
-    public function user(){
-        return $this->belongsTo('App\User');
+    protected $table = 'father_data';
+
+    public function users(){
+        return $this->belongsTo('App\User', 'student_id', 'student_id');
     }
 }

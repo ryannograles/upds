@@ -24,17 +24,19 @@
                         <div class="list-container ">
                             @guest
                             <ul class="navbar-nav ml-auto">
+                                @if(Route::has('login'))
                                 <li class="nav-item ">
                                     <a href="{{route('login')}}" class="nav-link login">Login</a>
                                 </li>
-                                @if(Route::has('register'))
-                                <li class="nav-item">
-                                    <a href="{{route('register')}}" class="nav-link register">Register</a>
-                                </li>
+{{--                                @if(Route::has('register'))--}}
+{{--                                <li class="nav-item">--}}
+{{--                                    <a href="{{route('register')}}" class="nav-link register">Register</a>--}}
+{{--                                </li>--}}
+{{--                                    @endif--}}
                                     @endif
                                 @else
-                                    <a href="#" id="navbarDropdown" class="nav-item dropdown-toggle user-now" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" v-pre>
-                                            {{Auth::user()->first_name}} <span class="caret"></span>
+                                    <a href="#" id="navbarDropdown" class="nav-item dropdown-toggle user-now" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" >
+                                            {{Auth::user()->student_id}} <span class="caret"></span>
                                     </a>
 
                                     <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
@@ -66,8 +68,7 @@
                            <p>An easy and convenient way to update your info's On-The-Go</p>
 
                            <div class="header-button-group text-left">
-                               <a href="{{route('login')}}" class="btn try-button" >Try It Now</a>
-                               <a href="#" class="btn learn-more">Learn More</a>
+                               <a href="{{route('login')}}" class="btn try-button" >GO TO UPDATING SYSTEM</a>
                            </div>
                        </div>
                    </div>

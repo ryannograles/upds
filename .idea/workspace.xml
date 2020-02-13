@@ -2,16 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ed158621-1b96-444a-ba09-180488926084" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/resources/views/userdashboard.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/DashboardController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/DashboardController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/StudentLoginController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/StudentLoginController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/css/dashboard.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/css/dashboard.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/css/simple-sidebar.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/css/simple-sidebar.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/dashboard.blade.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/layouts/app.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/layouts/app.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/welcome.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/welcome.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/StudentInfoController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/StudentInfoController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/admindashboard.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admindashboard.blade.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -25,11 +18,25 @@
       <executable />
     </execution>
   </component>
+  <component name="DatabaseView">
+    <option name="SHOW_INTERMEDIATE" value="true" />
+    <option name="GROUP_DATA_SOURCES" value="true" />
+    <option name="GROUP_SCHEMA" value="true" />
+    <option name="GROUP_CONTENTS" value="false" />
+    <option name="SORT_POSITIONED" value="false" />
+    <option name="SHOW_EMPTY_GROUPS" value="false" />
+    <option name="AUTO_SCROLL_FROM_SOURCE" value="false" />
+    <option name="HIDDEN_KINDS">
+      <set />
+    </option>
+    <expand />
+    <select />
+  </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="JavaScript File" />
         <option value="CSS File" />
+        <option value="JavaScript File" />
       </list>
     </option>
   </component>
@@ -126,14 +133,20 @@
   <component name="PropertiesComponent">
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../xavierupdate_new3" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="nodejs_package_manager_path" value="npm" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\xampp\htdocs\Updating_System.vs1\resources\views\layouts" />
-      <recent name="C:\xampp\htdocs\Updating_System.vs1\public\js" />
+      <recent name="C:\xampp\htdocs\beta\app\Http\Controllers" />
+      <recent name="C:\xampp\htdocs\beta\app" />
+      <recent name="C:\xampp\htdocs\beta\resources\views" />
+      <recent name="C:\xampp\htdocs\beta\app\Http\Controllers\Auth" />
+      <recent name="C:\xampp\htdocs\beta\app\Models" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\xampp\htdocs\beta\resources\views\inc" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -172,8 +185,36 @@
       <workItem from="1578811603554" duration="18123000" />
       <workItem from="1579110828836" duration="24574000" />
       <workItem from="1579249357269" duration="6231000" />
-      <workItem from="1579442402404" duration="15963000" />
+      <workItem from="1579442402404" duration="16691000" />
+      <workItem from="1579597354841" duration="6274000" />
+      <workItem from="1579709077319" duration="35274000" />
+      <workItem from="1580612299224" duration="16858000" />
+      <workItem from="1580834837739" duration="46959000" />
+      <workItem from="1581399285354" duration="2607000" />
+      <workItem from="1581436328314" duration="73985000" />
     </task>
+    <task id="LOCAL-00001" summary="Modified GUI for Dashboard Interface, Data from DB Pull, No updating yet, still havent fixed issue with regarding proper sessioning">
+      <created>1579458884472</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1579458884472</updated>
+    </task>
+    <task id="LOCAL-00002" summary="Fixed GUI, Models Made for Eloquent implementation, Admin functions added">
+      <created>1580837783092</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1580837783092</updated>
+    </task>
+    <task id="LOCAL-00003" summary="Fixed GUI, Models Made for Eloquent implementation, Admin functions added">
+      <created>1580839850841</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1580839850841</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -191,5 +232,21 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Modified GUI for Dashboard Interface, Data from DB Pull, No updating yet, still havent fixed issue with regarding proper sessioning" />
+    <MESSAGE value="Fixed GUI, Models Made for Eloquent implementation, Admin functions added" />
+    <option name="LAST_COMMIT_MESSAGE" value="Fixed GUI, Models Made for Eloquent implementation, Admin functions added" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="php">
+          <url>file://$PROJECT_DIR$/app/User.php</url>
+          <line>101</line>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>

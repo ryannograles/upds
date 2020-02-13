@@ -4,19 +4,19 @@
  * Licensed under MIT (https://github.com/BlackrockDigital/startbootstrap-simple-sidebar/blob/master/LICENSE)
  */
 body {
-  overflow-x: hidden;
+    overflow-x: hidden;
 }
 .sidebar{
     background-color: #324ab2;
 }
 
 #sidebar-wrapper {
-  min-height: 100vh;
-  margin-left: -30rem;
-  -webkit-transition: margin .25s ease-out;
-  -moz-transition: margin .25s ease-out;
-  -o-transition: margin .25s ease-out;
-  transition: margin .25s ease-out;
+    min-height: 100vh;
+    margin-left: -30rem;
+    -webkit-transition: margin .25s ease-out;
+    -moz-transition: margin .25s ease-out;
+    -o-transition: margin .25s ease-out;
+    transition: margin .25s ease-out;
 }
 
 .list-group{
@@ -73,8 +73,8 @@ body {
 }
 
 #sidebar-wrapper .list-group {
-     width: 17rem;
- }
+    width: 17rem;
+}
 
 .icon-nav{
     font-size: 20px;
@@ -88,11 +88,11 @@ body {
 }
 
 #page-content-wrapper {
-  min-width: 100vw;
+    min-width: 100vw;
 }
 
 #wrapper.toggled #sidebar-wrapper {
-  margin-left: 0;
+    margin-left: 0;
 }
 
 
@@ -102,16 +102,16 @@ body {
 }
 
 @media (min-width: 300px) {
-  #sidebar-wrapper {
-    margin-left: 0;
-  }
+    #sidebar-wrapper {
+        margin-left: 0;
+    }
 
-  #page-content-wrapper {
-    min-width: 0;
-    width: 100%;
-  }
+    #page-content-wrapper {
+        min-width: 0;
+        width: 100%;
+    }
 
-  #wrapper.toggled #sidebar-wrapper {
-    margin-left: -20.7rem;
-  }
+    #wrapper.toggled #sidebar-wrapper {
+        margin-left: -20.7rem;
+    }
 }

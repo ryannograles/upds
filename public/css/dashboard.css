@@ -4,56 +4,33 @@
     margin: 10px;
 }
 
-.title-header{
-    padding: 10px;
-    background-color: #8BDB61;
-}
 
-.title-header h1{
-    font-family: 'Poppins', sans-serif;
-    font-weight: bolder;
-    color: white;
-}
-
-.title-header p {
-    font-family: 'Open Sans', sans-serif;
-    font-weight: bold;
-}
-
-.student-info-container{
-    margin: 10px 5px 5px;
-
-}
-
-.edit-button{
-    margin: 10px;
-}
-
-.edit-button button{
-    font-family: 'Open Sans', sans-serif;
-    font-weight: bold;
-    text-transform: uppercase;
+.sticky-buttons .row button{
+    margin: 5px;
+    padding: 5px;
     letter-spacing: 3px;
 }
 
-.info-title{
+.box-layout{
+    margin: 20px 0 0;
+    padding: 5px;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: bold;
+    box-shadow: 0 0 8px 0 rgba(0, 0, 0, 0.5);
+}
+
+.box-layout h1{
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.marginer{
     margin: 5px;
-    padding-left: 2px;
+    padding: 5px;
 }
 
-.info-title h3{
-    font-family: 'Open Sans', sans-serif;
-    font-weight: bold;
+.forchange{
+    font-weight: normal;
     text-transform: uppercase;
-    letter-spacing: 2px;
-
-}
-
-.user-table tbody tr td {
-    font-family: 'Open Sans', sans-serif;
-    font-weight: bold;
-}
-
-.user-info{
-    box-shadow: 3px 3px 15px rgba(0, 0, 0, 0.3);
+    font-size: 13px;
 }
