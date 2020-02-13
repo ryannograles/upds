@@ -77,6 +77,7 @@
             </div>
         </nav>
         <div class="container-fluid">
+            @include('inc.messages')
             @yield('content')
         </div>
 {{--        <footer class="container-fluid">--}}

@@ -9,7 +9,7 @@ class StudentPersonalData extends Model
 
     protected $table = 'student_personal_data';
 
-    public function user(){
+    public function users(){
         return $this->belongsTo('App\User', 'student_id', 'student_id');
     }
 }

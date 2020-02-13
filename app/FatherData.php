@@ -8,7 +8,7 @@ class FatherData extends Model
 {
     protected $table = 'father_data';
 
-    public function user(){
+    public function users(){
         return $this->belongsTo('App\User', 'student_id', 'student_id');
     }
 }

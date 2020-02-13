@@ -2,11 +2,12 @@
 
 namespace App\Http\Controllers;
 
-use App\Admin;
-use Illuminate\Foundation\Auth\AuthenticatesUsers;
-use Illuminate\Http\Request;
-use Illuminate\Support\Facades\Auth;
+
+use Auth;
 use DB;
+use Illuminate\Http\Request;
+use App\Http\Controllers\Controller;
+use Illuminate\Foundation\Auth\ThrottlesLogins;
 
 
 class AdminLoginController extends Controller
@@ -23,14 +24,12 @@ class AdminLoginController extends Controller
     |
     */
 
-    use AuthenticatesUsers;
-
     /**
      * Where to redirect users after login.
      *
      * @var string
      */
-    protected $redirectTo = '/home';
+    protected $redirectTo = '/admin-login';
 
     /**
      * Create a new controller instance.
@@ -39,12 +38,43 @@ class AdminLoginController extends Controller
      */
     public function __construct()
     {
-        $this->middleware('guest')->except('logout');
+        $this->middleware('guest:admin');
+    }
+    public function index()
+    {
+
+        return view('auth/admin-login');
     }
 
-    public function index(){
+    public function login(Request $request){
 
-        return view('admin-login');
+        //validate data form
+
+        $this->validate($request, [
+            'admin_id' => 'required|string',
+            'password' => 'required|min:6'
+        ]);
+
+        //attemt to login admin
+
+        if(Auth::guard('admin')->attempt(['admin_id' => $request->admin_id, 'password' => $request->password]))
+        {
+
+//            DB::table('admin')->where('admin_id', $request->admin_id)->update(['last_login' =>  \Carbon\Carbon::now() ]);
+
+            return redirect('admindash');
+
+
+        }
+
+        //if sucess redirect to adminpage
+
+        return redirect()->back()->withInput($request->only('admin_id'));
+
+        // if unsuccessfull redirect to adminlogin
+
     }
-}
+
+
+    }
 

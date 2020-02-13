@@ -17,21 +17,31 @@ Route::get('/', function () {
 
 Auth::routes();
 
+Route::get('/admin-login', 'AdminLoginController@index');
+
 Route::get('/dashboard', 'DashboardController@index')->name('dashboard');
 
-Route::get('/admin_dashboard', 'AdminController@index')->name('admindash');
+Route::post('/studentinfo', [
+    'uses' => 'StudentInfoController@store',
+    'as' => 'store.info'
+]);
 
-//Route::get('/admin', 'AdminLoginController')->name('admin');
+Route::post('/studentinfo', [
+    'uses' => 'StudentInfoController@store',
+    'as' => 'store.info'
+]);
 
-Auth::routes();
+Route::put('/updateinfos/{student_id}','AdminController@updateInfo');
+
+Route::get('/admin-dashboard', 'AdminController@index')->name('admindash');
+
+Route::post('/login/admincustom',[
+    'uses' => 'AdminLoginController@login',
+    'as' =>'login.admin'
+]);
+
 
 Route::post('/login/custom',[
     'uses' => 'StudentLoginController@login',
     'as' =>'login.custom'
 ]);
-
-Route::put('/studentupdate/{student_id}','StudentLoginController@updateStudentInfo');
-
-Route::put('/motherupdate/{student_id}','StudentLoginController@updateMotherInfo');
-
-Route::put('/fatherupdate/{student_id}','StudentLoginController@updateFatherInfo');
