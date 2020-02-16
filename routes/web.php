@@ -26,10 +26,7 @@ Route::post('/studentinfo', [
     'as' => 'store.info'
 ]);
 
-Route::post('/studentinfo', [
-    'uses' => 'StudentInfoController@store',
-    'as' => 'store.info'
-]);
+Route::put('/rejectstatus/{student_id}','AdminController@RejectStatus');
 
 Route::put('/updateinfos/{student_id}','AdminController@updateInfo');
 

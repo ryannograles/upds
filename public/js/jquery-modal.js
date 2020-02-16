@@ -1,5 +1,4 @@
 
-
 $(document).ready(function () {
 
     $(".change").hide();
@@ -14,6 +13,8 @@ $(document).ready(function () {
     });
 
     $('#submit').on('click', function () {
+
+
 
         $("#edit").show();
         $("#submit").hide();

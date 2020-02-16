@@ -23,53 +23,55 @@
                     </thead>
                     <tbody>
                     @foreach($forapprovals as $approval)
-                        <form action="{{ url('/updateinfos/'. $approval->id)}}" method="POST">
-                            @csrf
-                            @method('PUT')
                             <tr>
                                 <td> {{ $approval->id }}</td>
                                 <td>{{ $approval->student_id }}
-
-                                    <input type="hidden" name="student_id" value="{{ $approval->student_id }}">
                                 </td>
                                 <td>{{ $approval->table_name}}
-                                    <input type="hidden" name="table_name" value="{{ $approval->table_name}}">
                                 </td>
                                 <td>{{ $approval->Name }}
-                                    <input type="hidden" name="Name" value="{{ $approval->Name }}">
                                 </td>
                                 <td>{{ $approval-> relationship }}
-                                    <input type="hidden" name="relationship" value="{{ $approval->relationship}}">
-
                                 </td>
                                 <td>{{ $approval-> request_for_approval }}
-                                    <input type="hidden" name="requestapproval" value="{{ $approval->request_for_approval}}">
                                 </td>
                                 <td>{{ $approval-> type_of_column }}
-                                    <input type="hidden" name="column" value="{{ $approval->type_of_column}}">
                                 </td>
                                 <td>{{ $approval-> contact_type }}
-                                    <input type="hidden" name="contact_type" value="{{ $approval->contact_type}}">
                                 </td>
                                 <td>{{ $approval-> contact_relationship }}
-                                    <input type="hidden" name="relationship" value="{{ $approval->relationship}}">
                                 </td>
                                 <td>@if($approval -> status == "PENDING")
                                         <div class="accept-button buttons">
-                                            <input type="hidden" name="status" value="ACCEPTED">
-                                            <button type="submit" class="btn btn-primary btn-md">Accept</button>
+                                            <form action="{{ url('/updateinfos/'. $approval->id) }}" method="POST">
+                                                @csrf
+                                                @method('PUT')
+                                                <input type="hidden" name="student_id" value="{{ $approval->student_id }}">
+                                                <input type="hidden" name="table_name" value="{{ $approval->table_name }}">
+                                                <input type="hidden" name="Name" value="{{ $approval->Name }}">
+                                                <input type="hidden" name="relationship" value="{{ $approval-> relationship }}">
+                                                <input type="hidden" name="requestapproval" value="{{ $approval-> request_for_approval }}">
+                                                <input type="hidden" name="column" value="{{ $approval->type_of_column}}">
+                                                <input type="hidden" name="contact_type" value="{{ $approval->contact_type}}">
+                                                <input type="hidden" name="relationshipcontact" value="{{ $approval->contact_relationship}}">
+                                                <button type="submit" class="btn btn-primary btn-sm">ACCEPT</button>
+                                            </form>
                                         </div>
-                                    @elseif($approval -> status == "ACCEPTED")
-                                            ACCEPTED
-                                    @else
-                                        <div class="status">
-                                            REJECTED
+                                        <div class="reject-button buttons">
+                                            <form action="{{ url('/rejectstatus/'. $approval->id) }}" method="POST">
+                                                @csrf
+                                                @method('PUT')
+                                                <button type="submit" class="btn btn-danger btn-sm">REJECT</button>
+                                            </form>
                                         </div>
-                                    @endif
+                                        @elseif($approval->status == 'ACCEPTED')
+                                        ACCEPTED
+                                        @else
+                                        REJECTED
+                                        @endif
                                 </td>
                             </tr>
-                        @endforeach
-                        </form>
+                    @endforeach
                     </tbody>
                 </table>
             </div>

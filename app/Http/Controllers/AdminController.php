@@ -26,20 +26,30 @@ class AdminController extends Controller
 
         $tablename = $request->input('table_name');
         $columntype = $request->input('column');
-//        $contactType = $request->input('contact_type');
-//        $contactrelationship = $request->input('relationshipcontact');
+        $contactType = $request->input('contact_type');
+        $contactrelationship = $request->input('relationshipcontact');
         $approvalrequest = $request->input('requestapproval');
 
         DB::table('for_approval')->where('id', $id)->update(['status' => 'ACCEPTED']);
-//
-        DB::table($tablename)->where('student_id', $request->student_id)->update([$columntype => $approvalrequest]);
-//
-//
+
+        if($tablename == 'contacts'){
+
+            DB::table($tablename)->where(['student_id', $request->student_id], ['relationship', $contactrelationship], ['contact_type', $contactType] )->update([$columntype => $approvalrequest]);
+
+        }
+        else{
+
+            DB::table($tablename)->where('student_id', $request->student_id)->update([$columntype => $approvalrequest]);
+        }
+
         return redirect('/admin-dashboard')->with('success', 'Request has been accepted');
+    }
 
-//        dd($tablename, $columntype, $approvalrequest, $id);
+    public function RejectStatus($id){
 
+        DB::table('for_approval')->where('id', $id)->update(['status' => 'REJECTED']);
 
+        return redirect('/admin-dashboard')->with('success', 'Request has been accepted');
     }
 
 }
