@@ -100,9 +100,7 @@ class DashboardController extends Controller
         $status = DB::table('for_approval')->where([
             ['student_id', $student_id ],
             ['status', '=' , "PENDING"]
-        ])->pluck('status');
-
-        $columnType = DB::table('for_approval')->where('student_id', $student_id)->pluck('type_of_column');
+        ])->get();
 
 
 
@@ -128,10 +126,10 @@ class DashboardController extends Controller
 
         if ($studentBirthMonth != $studentOrigBirthMonth && $studentBirthMonth != null){
 
-            $s_bmonth = $studentOrigBirthMonth;
+            $s_bmonth = $studentBirthMonth;
         }
         else{
-            $s_bmonth = $studentBirthMonth;
+            $s_bmonth = $studentOrigBirthMonth;
         }
 
         if ($studentBirthDay != $studentOrigBirthDay && $studentBirthDay != null){
@@ -204,14 +202,6 @@ class DashboardController extends Controller
             $s_pcode = $studentOrigPCode;
         }
 
-        if ($studentOrigPCode != $studentPCode && $studentPCode != null){
-
-            $s_pcode = $studentPCode;
-        }
-        else{
-            $s_pcode = $studentOrigPCode;
-        }
-
         if ($studentOrigCity != $studentCity && $studentCity != null){
 
             $s_city = $studentCity;
@@ -226,14 +216,6 @@ class DashboardController extends Controller
         }
         else{
             $s_prov = $studentOrigProv;
-        }
-
-        if ($studentOrigRegion != $studentRegion && $studentRegion != null){
-
-            $s_region= $studentRegion;
-        }
-        else{
-            $s_region = $studentOrigRegion;
         }
 
         if ($studentOrigRegion != $studentRegion && $studentRegion != null){
@@ -465,6 +447,6 @@ class DashboardController extends Controller
 
 
 
-         return view('userdashboard')->with(compact('studentNameData','motherData','fatherData', 's_region','s_email','s_prov', 's_bmonth', 's_bday','s_byear','s_hn','s_street','s_brgy', 's_sub', 's_district', 's_pcode','s_city' , 'm_region','m_email','m_prov', 'm_bmonth', 'm_bday','m_byear','m_hn','m_street','m_brgy', 'm_sub', 'm_district', 'm_pcode','m_city', 'f_region','f_email','f_prov', 'f_bmonth', 'f_bday','f_byear','f_hn','f_street','f_brgy', 'f_sub', 'f_district', 'f_pcode','f_city','s_mcontact','s_fcontact','columnType','status'));
+         return view('userdashboard')->with(compact('studentNameData','motherData','fatherData', 's_region','s_email','s_prov', 's_bmonth', 's_bday','s_byear','s_hn','s_street','s_brgy', 's_sub', 's_district', 's_pcode','s_city' , 'm_region','m_email','m_prov', 'm_bmonth', 'm_bday','m_byear','m_hn','m_street','m_brgy', 'm_sub', 'm_district', 'm_pcode','m_city', 'f_region','f_email','f_prov', 'f_bmonth', 'f_bday','f_byear','f_hn','f_street','f_brgy', 'f_sub', 'f_district', 'f_pcode','f_city','s_mcontact','s_fcontact','status'));
     }
 }

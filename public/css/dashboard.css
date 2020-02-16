@@ -34,3 +34,13 @@
     text-transform: uppercase;
     font-size: 13px;
 }
+
+.pending {
+    color: #7f7f7f;
+    font-size: 11px;
+}
+
+.pending-text{
+    font-weight: normal;
+    text-transform: uppercase;
+}

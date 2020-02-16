@@ -3,8 +3,15 @@
   <component name="ChangeListManager">
     <list default="true" id="ed158621-1b96-444a-ba09-180488926084" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/AdminController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/AdminController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/DashboardController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/DashboardController.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Http/Controllers/StudentInfoController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/StudentInfoController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/css/admindashboard.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/css/admindashboard.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/css/dashboard.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/css/dashboard.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/js/jquery-modal.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/js/jquery-modal.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/admindashboard.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admindashboard.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/userdashboard.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/userdashboard.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -133,7 +140,7 @@
   <component name="PropertiesComponent">
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../xavierupdate_new3" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="nodejs_package_manager_path" value="npm" />
   </component>
@@ -191,7 +198,9 @@
       <workItem from="1580612299224" duration="16858000" />
       <workItem from="1580834837739" duration="46959000" />
       <workItem from="1581399285354" duration="2607000" />
-      <workItem from="1581436328314" duration="73985000" />
+      <workItem from="1581436328314" duration="74580000" />
+      <workItem from="1581746995791" duration="4646000" />
+      <workItem from="1581851518638" duration="18393000" />
     </task>
     <task id="LOCAL-00001" summary="Modified GUI for Dashboard Interface, Data from DB Pull, No updating yet, still havent fixed issue with regarding proper sessioning">
       <created>1579458884472</created>
